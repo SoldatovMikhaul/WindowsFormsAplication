@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="NorthwindConnectionString">
+      <rd:DataSourceID>82ec7e83-f582-426d-8c16-b6562e5f8831</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>
+        </DataProvider>
+        <ConnectString>
+        </ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <rd:ReportID>faeae534-9870-4905-ae98-0202ec9b4f15</rd:ReportID>
+  <Width>12.69841cm</Width>
+  <Body>
+    <Height>7.26349cm</Height>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Textbox Name="textbox1">
+        <Style>
+          <FontFamily>Tahoma</FontFamily>
+          <FontSize>20pt</FontSize>
+          <Color>SteelBlue</Color>
+          <FontWeight>Bold</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Value>Report1</Value>
+        <CanGrow>true</CanGrow>
+        <Height>0.91429cm</Height>
+      </Textbox>
+      <List Name="List1">
+        <Style>
+          <FontFamily>Tahoma</FontFamily>
+          <FontSize>14pt</FontSize>
+          <Color>SlateGray</Color>
+        </Style>
+        <ReportItems>
+          <Textbox Name="number">
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>14pt</FontSize>
+              <Color>SlateGray</Color>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <rd:DefaultName>number</rd:DefaultName>
+            <Value>=Fields!number.Value</Value>
+            <CanGrow>true</CanGrow>
+            <Height>0.68571cm</Height>
+          </Textbox>
+          <List Name="List2">
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>12pt</FontSize>
+            </Style>
+            <ReportItems>
+              <Textbox Name="dat">
+                <Style>
+                  <FontFamily>Tahoma</FontFamily>
+                  <FontSize>12pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <rd:DefaultName>dat</rd:DefaultName>
+                <Value>=Fields!dat.Value</Value>
+                <CanGrow>true</CanGrow>
+                <Height>0.60952cm</Height>
+              </Textbox>
+              <List Name="List3">
+                <Style>
+                  <FontFamily>Tahoma</FontFamily>
+                  <FontSize>10pt</FontSize>
+                </Style>
+                <ReportItems>
+                  <Textbox Name="postavshik">
+                    <Style>
+                      <FontFamily>Tahoma</FontFamily>
+                      <FontSize>10pt</FontSize>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                    <rd:DefaultName>postavshik</rd:DefaultName>
+                    <Value>=Fields!postavshik.Value</Value>
+                    <CanGrow>true</CanGrow>
+                    <Height>0.53333cm</Height>
+                  </Textbox>
+                  <List Name="List4">
+                    <Style>
+                      <FontFamily>Tahoma</FontFamily>
+                      <FontSize>10pt</FontSize>
+                    </Style>
+                    <ReportItems>
+                      <Textbox Name="naimenovnie">
+                        <Style>
+                          <FontFamily>Tahoma</FontFamily>
+                          <FontSize>10pt</FontSize>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                        <rd:DefaultName>naimenovnie</rd:DefaultName>
+                        <Value>=Fields!naimenovnie.Value</Value>
+                        <CanGrow>true</CanGrow>
+                        <Height>0.53333cm</Height>
+                      </Textbox>
+                      <List Name="List5">
+                        <Style>
+                          <FontFamily>Tahoma</FontFamily>
+                          <FontSize>10pt</FontSize>
+                        </Style>
+                        <ReportItems>
+                          <Textbox Name="id">
+                            <Style>
+                              <FontFamily>Tahoma</FontFamily>
+                              <FontSize>10pt</FontSize>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                            <rd:DefaultName>id</rd:DefaultName>
+                            <Value>=Fields!id.Value</Value>
+                            <CanGrow>true</CanGrow>
+                            <Height>0.53333cm</Height>
+                          </Textbox>
+                          <Table Name="table1">
+                            <Top>1.26984cm</Top>
+                            <Style />
+                            <Header>
+                              <RepeatOnNewPage>true</RepeatOnNewPage>
+                              <TableRows>
+                                <TableRow>
+                                  <TableCells />
+                                  <Height>0.00000cm</Height>
+                                </TableRow>
+                              </TableRows>
+                            </Header>
+                            <Details>
+                              <TableRows>
+                                <TableRow>
+                                  <TableCells />
+                                  <Height>0.00000cm</Height>
+                                </TableRow>
+                              </TableRows>
+                            </Details>
+                            <TableColumns />
+                            <DataSetName>NorthwindDataSet1_test1</DataSetName>
+                          </Table>
+                        </ReportItems>
+                        <Grouping Name="list1_id">
+                          <GroupExpressions>
+                            <GroupExpression>=Fields!id.Value</GroupExpression>
+                          </GroupExpressions>
+                          <PageBreakAtEnd>true</PageBreakAtEnd>
+                        </Grouping>
+                        <Sorting>
+                          <SortBy>
+                            <SortExpression>=Fields!id.Value</SortExpression>
+                          </SortBy>
+                        </Sorting>
+                        <Top>1.26984cm</Top>
+                        <DataSetName>NorthwindDataSet1_test1</DataSetName>
+                      </List>
+                    </ReportItems>
+                    <Grouping Name="list1_naimenovnie">
+                      <GroupExpressions>
+                        <GroupExpression>=Fields!naimenovnie.Value</GroupExpression>
+                      </GroupExpressions>
+                      <PageBreakAtEnd>true</PageBreakAtEnd>
+                    </Grouping>
+                    <Sorting>
+                      <SortBy>
+                        <SortExpression>=Fields!naimenovnie.Value</SortExpression>
+                      </SortBy>
+                    </Sorting>
+                    <Top>1.26984cm</Top>
+                    <DataSetName>NorthwindDataSet1_test1</DataSetName>
+                  </List>
+                </ReportItems>
+                <Grouping Name="list1_postavshik">
+                  <GroupExpressions>
+                    <GroupExpression>=Fields!postavshik.Value</GroupExpression>
+                  </GroupExpressions>
+                  <PageBreakAtEnd>true</PageBreakAtEnd>
+                </Grouping>
+                <Sorting>
+                  <SortBy>
+                    <SortExpression>=Fields!postavshik.Value</SortExpression>
+                  </SortBy>
+                </Sorting>
+                <Top>1.26984cm</Top>
+                <DataSetName>NorthwindDataSet1_test1</DataSetName>
+              </List>
+            </ReportItems>
+            <Grouping Name="list1_dat">
+              <GroupExpressions>
+                <GroupExpression>=Fields!dat.Value</GroupExpression>
+              </GroupExpressions>
+              <PageBreakAtEnd>true</PageBreakAtEnd>
+            </Grouping>
+            <Sorting>
+              <SortBy>
+                <SortExpression>=Fields!dat.Value</SortExpression>
+              </SortBy>
+            </Sorting>
+            <Top>1.26984cm</Top>
+            <DataSetName>NorthwindDataSet1_test1</DataSetName>
+          </List>
+        </ReportItems>
+        <Grouping Name="list1_number">
+          <GroupExpressions>
+            <GroupExpression>=Fields!number.Value</GroupExpression>
+          </GroupExpressions>
+          <PageBreakAtEnd>true</PageBreakAtEnd>
+        </Grouping>
+        <Sorting>
+          <SortBy>
+            <SortExpression>=Fields!number.Value</SortExpression>
+          </SortBy>
+        </Sorting>
+        <Top>0.91429cm</Top>
+        <DataSetName>NorthwindDataSet1_test1</DataSetName>
+      </List>
+    </ReportItems>
+  </Body>
+  <Language>ru-RU</Language>
+  <LeftMargin>2.5cm</LeftMargin>
+  <RightMargin>2.5cm</RightMargin>
+  <TopMargin>2.5cm</TopMargin>
+  <BottomMargin>2.5cm</BottomMargin>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <PageWidth>21cm</PageWidth>
+  <PageHeight>29.7cm</PageHeight>
+  <DataSets>
+    <DataSet Name="NorthwindDataSet1_test1">
+      <rd:DataSetInfo>
+        <rd:DataSetName>NorthwindDataSet1</rd:DataSetName>
+        <rd:TableName>test1</rd:TableName>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>test1TableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT number, dat, postavshik, naimenovnie, id FROM dbo.test1</CommandText>
+        <DataSourceName>NorthwindConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="number">
+          <DataField>number</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="dat">
+          <DataField>dat</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="postavshik">
+          <DataField>postavshik</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="naimenovnie">
+          <DataField>naimenovnie</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="id">
+          <DataField>id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+</Report>

@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="NorthwindConnectionString">
+      <rd:DataSourceID>8026b1b6-fe93-45ac-a21e-c11a4a91a104</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>
+        </DataProvider>
+        <ConnectString>
+        </ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <rd:ReportID>e9a09d76-0819-40c9-ba78-c9eef5d4de22</rd:ReportID>
+  <Width>12.69841cm</Width>
+  <Body>
+    <Height>9.80317cm</Height>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Textbox Name="textbox1">
+        <Style>
+          <FontFamily>Tahoma</FontFamily>
+          <FontSize>20pt</FontSize>
+          <Color>SteelBlue</Color>
+          <FontWeight>Bold</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Value>Report2</Value>
+        <CanGrow>true</CanGrow>
+        <Height>0.91429cm</Height>
+      </Textbox>
+      <List Name="List1">
+        <Style>
+          <FontFamily>Tahoma</FontFamily>
+          <FontSize>14pt</FontSize>
+          <Color>SlateGray</Color>
+        </Style>
+        <ReportItems>
+          <Textbox Name="plu">
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>14pt</FontSize>
+              <Color>SlateGray</Color>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <rd:DefaultName>plu</rd:DefaultName>
+            <Value>=Fields!plu.Value</Value>
+            <CanGrow>true</CanGrow>
+            <Height>0.68571cm</Height>
+          </Textbox>
+          <List Name="List2">
+            <Style>
+              <FontFamily>Tahoma</FontFamily>
+              <FontSize>12pt</FontSize>
+            </Style>
+            <ReportItems>
+              <Textbox Name="qty">
+                <Style>
+                  <FontFamily>Tahoma</FontFamily>
+                  <FontSize>12pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <rd:DefaultName>qty</rd:DefaultName>
+                <Value>=Fields!qty.Value</Value>
+                <CanGrow>true</CanGrow>
+                <Height>0.60952cm</Height>
+              </Textbox>
+              <List Name="List3">
+                <Style>
+                  <FontFamily>Tahoma</FontFamily>
+                  <FontSize>10pt</FontSize>
+                </Style>
+                <ReportItems>
+                  <Textbox Name="price">
+                    <Style>
+                      <FontFamily>Tahoma</FontFamily>
+                      <FontSize>10pt</FontSize>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                    <rd:DefaultName>price</rd:DefaultName>
+                    <Value>=Fields!price.Value</Value>
+                    <CanGrow>true</CanGrow>
+                    <Height>0.53333cm</Height>
+                  </Textbox>
+                  <List Name="List4">
+                    <Style>
+                      <FontFamily>Tahoma</FontFamily>
+                      <FontSize>10pt</FontSize>
+                    </Style>
+                    <ReportItems>
+                      <Textbox Name="descr">
+                        <Style>
+                          <FontFamily>Tahoma</FontFamily>
+                          <FontSize>10pt</FontSize>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                        <rd:DefaultName>descr</rd:DefaultName>
+                        <Value>=Fields!descr.Value</Value>
+                        <CanGrow>true</CanGrow>
+                        <Height>0.53333cm</Height>
+                      </Textbox>
+                      <List Name="List5">
+                        <Style>
+                          <FontFamily>Tahoma</FontFamily>
+                          <FontSize>10pt</FontSize>
+                        </Style>
+                        <ReportItems>
+                          <Textbox Name="id">
+                            <Style>
+                              <FontFamily>Tahoma</FontFamily>
+                              <FontSize>10pt</FontSize>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                            <rd:DefaultName>id</rd:DefaultName>
+                            <Value>=Fields!id.Value</Value>
+                            <CanGrow>true</CanGrow>
+                            <Height>0.53333cm</Height>
+                          </Textbox>
+                          <List Name="List6">
+                            <Style>
+                              <FontFamily>Tahoma</FontFamily>
+                              <FontSize>10pt</FontSize>
+                            </Style>
+                            <ReportItems>
+                              <Textbox Name="nd">
+                                <Style>
+                                  <FontFamily>Tahoma</FontFamily>
+                                  <FontSize>10pt</FontSize>
+                                  <PaddingLeft>2pt</PaddingLeft>
+                                  <PaddingRight>2pt</PaddingRight>
+                                  <PaddingTop>2pt</PaddingTop>
+                                  <PaddingBottom>2pt</PaddingBottom>
+                                </Style>
+                                <rd:DefaultName>nd</rd:DefaultName>
+                                <Value>=Fields!nd.Value</Value>
+                                <CanGrow>true</CanGrow>
+                                <Height>0.53333cm</Height>
+                              </Textbox>
+                              <List Name="List7">
+                                <Style>
+                                  <FontFamily>Tahoma</FontFamily>
+                                  <FontSize>10pt</FontSize>
+                                </Style>
+                                <ReportItems>
+                                  <Textbox Name="sprav_nd">
+                                    <Style>
+                                      <FontFamily>Tahoma</FontFamily>
+                                      <FontSize>10pt</FontSize>
+                                      <PaddingLeft>2pt</PaddingLeft>
+                                      <PaddingRight>2pt</PaddingRight>
+                                      <PaddingTop>2pt</PaddingTop>
+                                      <PaddingBottom>2pt</PaddingBottom>
+                                    </Style>
+                                    <rd:DefaultName>sprav_nd</rd:DefaultName>
+                                    <Value>=Fields!sprav_nd.Value</Value>
+                                    <CanGrow>true</CanGrow>
+                                    <Height>0.53333cm</Height>
+                                  </Textbox>
+                                  <Table Name="table1">
+                                    <Top>1.26984cm</Top>
+                                    <Style />
+                                    <Header>
+                                      <RepeatOnNewPage>true</RepeatOnNewPage>
+                                      <TableRows>
+                                        <TableRow>
+                                          <TableCells />
+                                          <Height>0.00000cm</Height>
+                                        </TableRow>
+                                      </TableRows>
+                                    </Header>
+                                    <Details>
+                                      <TableRows>
+                                        <TableRow>
+                                          <TableCells />
+                                          <Height>0.00000cm</Height>
+                                        </TableRow>
+                                      </TableRows>
+                                    </Details>
+                                    <TableColumns />
+                                    <DataSetName>NorthwindDataSet11_test2</DataSetName>
+                                  </Table>
+                                </ReportItems>
+                                <Grouping Name="list1_sprav_nd">
+                                  <GroupExpressions>
+                                    <GroupExpression>=Fields!sprav_nd.Value</GroupExpression>
+                                  </GroupExpressions>
+                                  <PageBreakAtEnd>true</PageBreakAtEnd>
+                                </Grouping>
+                                <Sorting>
+                                  <SortBy>
+                                    <SortExpression>=Fields!sprav_nd.Value</SortExpression>
+                                  </SortBy>
+                                </Sorting>
+                                <Top>1.26984cm</Top>
+                                <DataSetName>NorthwindDataSet11_test2</DataSetName>
+                              </List>
+                            </ReportItems>
+                            <Grouping Name="list1_nd">
+                              <GroupExpressions>
+                                <GroupExpression>=Fields!nd.Value</GroupExpression>
+                              </GroupExpressions>
+                              <PageBreakAtEnd>true</PageBreakAtEnd>
+                            </Grouping>
+                            <Sorting>
+                              <SortBy>
+                                <SortExpression>=Fields!nd.Value</SortExpression>
+                              </SortBy>
+                            </Sorting>
+                            <Top>1.26984cm</Top>
+                            <DataSetName>NorthwindDataSet11_test2</DataSetName>
+                          </List>
+                        </ReportItems>
+                        <Grouping Name="list1_id">
+                          <GroupExpressions>
+                            <GroupExpression>=Fields!id.Value</GroupExpression>
+                          </GroupExpressions>
+                          <PageBreakAtEnd>true</PageBreakAtEnd>
+                        </Grouping>
+                        <Sorting>
+                          <SortBy>
+                            <SortExpression>=Fields!id.Value</SortExpression>
+                          </SortBy>
+                        </Sorting>
+                        <Top>1.26984cm</Top>
+                        <DataSetName>NorthwindDataSet11_test2</DataSetName>
+                      </List>
+                    </ReportItems>
+                    <Grouping Name="list1_descr">
+                      <GroupExpressions>
+                        <GroupExpression>=Fields!descr.Value</GroupExpression>
+                      </GroupExpressions>
+                      <PageBreakAtEnd>true</PageBreakAtEnd>
+                    </Grouping>
+                    <Sorting>
+                      <SortBy>
+                        <SortExpression>=Fields!descr.Value</SortExpression>
+                      </SortBy>
+                    </Sorting>
+                    <Top>1.26984cm</Top>
+                    <DataSetName>NorthwindDataSet11_test2</DataSetName>
+                  </List>
+                </ReportItems>
+                <Grouping Name="list1_price">
+                  <GroupExpressions>
+                    <GroupExpression>=Fields!price.Value</GroupExpression>
+                  </GroupExpressions>
+                  <PageBreakAtEnd>true</PageBreakAtEnd>
+                </Grouping>
+                <Sorting>
+                  <SortBy>
+                    <SortExpression>=Fields!price.Value</SortExpression>
+                  </SortBy>
+                </Sorting>
+                <Top>1.26984cm</Top>
+                <DataSetName>NorthwindDataSet11_test2</DataSetName>
+              </List>
+            </ReportItems>
+            <Grouping Name="list1_qty">
+              <GroupExpressions>
+                <GroupExpression>=Fields!qty.Value</GroupExpression>
+              </GroupExpressions>
+              <PageBreakAtEnd>true</PageBreakAtEnd>
+            </Grouping>
+            <Sorting>
+              <SortBy>
+                <SortExpression>=Fields!qty.Value</SortExpression>
+              </SortBy>
+            </Sorting>
+            <Top>1.26984cm</Top>
+            <DataSetName>NorthwindDataSet11_test2</DataSetName>
+          </List>
+        </ReportItems>
+        <Grouping Name="list1_plu">
+          <GroupExpressions>
+            <GroupExpression>=Fields!plu.Value</GroupExpression>
+          </GroupExpressions>
+          <PageBreakAtEnd>true</PageBreakAtEnd>
+        </Grouping>
+        <Sorting>
+          <SortBy>
+            <SortExpression>=Fields!plu.Value</SortExpression>
+          </SortBy>
+        </Sorting>
+        <Top>0.91429cm</Top>
+        <DataSetName>NorthwindDataSet11_test2</DataSetName>
+      </List>
+    </ReportItems>
+  </Body>
+  <Language>ru-RU</Language>
+  <LeftMargin>2.5cm</LeftMargin>
+  <RightMargin>2.5cm</RightMargin>
+  <TopMargin>2.5cm</TopMargin>
+  <BottomMargin>2.5cm</BottomMargin>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <PageWidth>21cm</PageWidth>
+  <PageHeight>29.7cm</PageHeight>
+  <DataSets>
+    <DataSet Name="NorthwindDataSet11_test2">
+      <rd:DataSetInfo>
+        <rd:DataSetName>NorthwindDataSet11</rd:DataSetName>
+        <rd:TableName>test2</rd:TableName>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>test2TableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT plu, qty, price, descr, id, nd, sprav_nd FROM dbo.test2</CommandText>
+        <DataSourceName>NorthwindConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="plu">
+          <DataField>plu</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="qty">
+          <DataField>qty</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="price">
+          <DataField>price</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="descr">
+          <DataField>descr</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="id">
+          <DataField>id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="nd">
+          <DataField>nd</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="sprav_nd">
+          <DataField>sprav_nd</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+</Report>
